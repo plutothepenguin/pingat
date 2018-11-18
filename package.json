@@ -1,0 +1,22 @@
+{
+  "name": "pingat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plutothepenguin/pingat.git"
+  },
+  "author": "Omid Ghafori",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/plutothepenguin/pingat/issues"
+  },
+  "homepage": "https://github.com/plutothepenguin/pingat#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
