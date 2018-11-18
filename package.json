@@ -1,5 +1,5 @@
 {
-  "name": "pingat",
+  "name": "template",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/plutothepenguin/pingat.git"
+    "url": "git+https://github.com/plutothepenguin/template.git"
   },
   "author": "Omid Ghafori",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/plutothepenguin/pingat/issues"
+    "url": "https://github.com/plutothepenguin/template/issues"
   },
-  "homepage": "https://github.com/plutothepenguin/pingat#readme",
+  "homepage": "https://github.com/plutothepenguin/template#readme",
   "dependencies": {
     "express": "^4.16.4"
   }
