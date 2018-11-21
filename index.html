@@ -6,18 +6,26 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Pingat</title>
   <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 <body>
   <div class="container">
     <div class="left-container">
     </div>
     <div class="right-container">
-      <div class="form-container">
-        <form action="/send" method="post">
-          <input type="text" name="text" class="text" autofocus>
-        </form>
+      <div class="messages-container">
+      </div>
+      <div class="bottom-container">
+        <div class="form-container">
+          <div class="upload">+</div>
+          <form action="/send" method="post">
+            <input type="text" name="text" class="text" autocomplete="off" autofocus>
+          </form>
+        </div>
       </div>
     </div>
   </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
