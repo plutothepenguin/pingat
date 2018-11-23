@@ -35,10 +35,9 @@ body {
   float: left;
   overflow-x: hidden;
   overflow-y: auto;
-  border-right: 1px solid black;
 }
 .right-container {
-  width: calc(80% - 1px);
+  width: 80%;
   height: 100vh;
   margin: 0;
   padding: 0;
@@ -63,8 +62,9 @@ body {
   margin: 0 auto;
   display: inline-block;
   float: left;
-  border: 2px solid #aaa;
+  border: 2px solid #00ACBF;
   transition: 0.2s;
+  font-size: 20px;
 }
 .upload:hover {
   border: 2px solid #00ACBF;
@@ -85,9 +85,10 @@ body {
 }
 .messages-container {
   width: 100%;
-  height: calc(100vh - 90px);
+  height: calc(100vh - 160px);
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: overlay;
+  margin-top: 70px;
 }
 .message {
   width: 100%;
@@ -110,8 +111,159 @@ body {
   vertical-align: middle;
   line-height: 97px;
 }
-img {
+.messages-header {
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  top: 0;
+  line-height: 70px;
+  font-size: 30px;
+  font-weight: bold;
+  box-shadow: 0 3px 3px -3px #00ACBF;
+}
+.friends-header {
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  top: 0;
+  line-height: 70px;
+  font-size: 30px;
+  font-weight: bold;
+  box-shadow: 0 5px 5px -5px #00ACBF;
+}
+.friends-container {
+  width: calc(100% - 5px);
+  height: calc(100vh - 160px);
+  overflow-x: hidden;
+  overflow-y: overlay;
+  margin-top: 70px;
+  margin-left: 5px;
+}
+.settings-container {
+  height: 70px;
+  width: 20vw;
+  position: absolute;
+  bottom: 0;
+  box-shadow: 0 -3px 3px -3px #00ACBF;
+}
+.header-text {
+  margin-left: 10px;
+}
+.friend {
+  height: 70px;
+  width: 100%;
+}
+.friend:hover {
+  cursor: pointer;
+}
+.friend-text {
+  line-height: 70px;
+  font-size: 20px;
+}
+.message-avatar {
   width: 60px;
   height: 60px;
   border-radius: 30px;
+  border: 2px solid #00ACBF;
+}
+.friend-avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 30px;
+  border: 2px solid #00ACBF;
+  float: left;
+  margin: 10px;
+}
+.settings-button {
+  width: 30px;
+  height: 30px;
+  float: right;
+  margin: 20px;
+  display: inline-block;
+  border: 2px solid #00ACBF;
+  background-color: white;
+  color: #00ACBF;
+  border-radius: 30px;
+}
+.settings-overlay {
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  position: absolute;
+  bottom: 100vh;
+  left: 0;
+  transition: 0.4s;
+}
+.settings {
+  width: 40%;
+  height: 700px;
+  border: 2px solid #00ACBF;
+  margin: 0 auto;
+  margin-top: calc((100vh - 700px)/2);
+  border-radius: 15px;
+}
+.settings-title {
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  display: inline-block;
+  color: #00ACBF;
+  margin-top: 10px;
+}
+.settings-close {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #00ACBF;
+  background-color: white;
+  color: #00ACBF;
+  border-radius: 30px;
+  display: inline-block;
+  position: absolute;
+  top: calc((100vh - 700px)/2 - 20px);
+  right: calc(30vw - 20px);
+}
+button {
+  border: 2px solid #00ACBF;
+  background-color: white;
+  color: #00ACBF;
+  transition: 0.2s;
+}
+button:hover {
+  background-color: #00ACBF;
+  color: white;
+}
+button:hover {
+  cursor: pointer;
+}
+button:focus {
+  outline: none;
+}
+.options {
+  width: 80%;
+  height: 600px;
+  margin: 0 auto;
+}
+.toggleable {
+  width: 70px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: white;
+  border: 2px solid #00ACBF;
+  cursor: pointer;
+}
+.ball {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  background-color: #00ACBF;
+  margin-left: 0;
+  transition: 0.2s;
+  border: 2px solid white;
+  box-sizing: border-box;
+}
+.on {
+  margin-left: 40px;
+  background-color: white;
+  border: 2px solid #00ACBF;
 }

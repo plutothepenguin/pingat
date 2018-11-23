@@ -9,16 +9,39 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 <body>
+  <div class="settings-overlay">
+    <div class="settings">
+      <div class="settings-title">Settings</div>
+      <div class="options">
+        <!-- <div class="theme-option">
+          Theme:
+        </div> -->
+        <div class="toggleable"><div class="ball"></div></div>
+      </div>
+      <button class="settings-close">x</button>
+    </div>
+  </div>
   <div class="container">
     <div class="left-container">
+      <div class="friends-container">
+        <div class="friends-header"><span class="header-text">Friends</span></div>
+      </div>
+      <div class="settings-container">
+        <button class="settings-button">x</button>
+      </div>
     </div>
     <div class="right-container">
+      <div class="messages-header">
+        <span class="header-text">@Username</span>
+      </div>
       <div class="messages-container">
+
       </div>
       <div class="bottom-container">
         <div class="form-container">
-          <div class="upload">+</div>
-          <form action="/send" method="post">
+          <button class="upload">+</button>
+          <!-- <form action="/send" method="post"> -->
+          <form>
             <input type="text" name="text" class="text" autocomplete="off" autofocus>
           </form>
         </div>
